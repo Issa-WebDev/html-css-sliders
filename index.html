@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">  
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 1 -->
+    <div class="container one">
       <div class="img-section">
-        <img src="images/p1.png" alt="présentations" />
+        <img src="images/intro.jpg" alt="présentations" />
       </div>
-      <div class="text-section">
+      <div class="text-section one">
         <h1>
           Veille sur les API : <br />
           Comprendre des interfaces de <br />
@@ -21,22 +23,380 @@
         </h1>
       </div>
       <div class="footer">Groupe F</div>
-    </div> 
+    </div>
+    <!-- FIN SLIDES 1 -->
+    <!-- ============================================ -->
 
-	<div class="container">  
-      <div class="img-section">
-        <img src="images/p1.png" alt="présentations" />
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 2 -->
+    <div class="container two">
+      <div class="text-section two">
+        <h1>Généralités sur les API</h1>
+        <h3>Qu’est ce que l’ API ❓</h3>
+        <h4>Fonctionnement</h4>
+        <ul>
+          <li>Agissent comme des intermédiaires entre les applications.</li>
+          <li>Facilitent l'échange de données et de fonctionnalités.</li>
+          <li>
+            Évitent aux applications de connaître les détails de
+            l'implémentation de l'autre système.
+          </li>
+        </ul>
+        <div class="comment">
+          <p>
+            1- Définition : Une API (Interface de Programmation d'Application)
+            est un ensemble de règles et de protocoles qui permettent à deux
+            systèmes logiciels de communiquer entre eux.
+          </p>
+          <p>
+            2 - Fonctionnement : Les API agissent comme des intermédiaires,
+            permettant aux applications d'échanger des données et de
+            fonctionnalités sans avoir à connaître les détails de
+            l'implémentation de l'autre système.
+          </p>
+        </div>
       </div>
-      <div class="text-section">
-        <h1>
-          Veille sur les API : <br />
-          Comprendre des interfaces de <br />
-          programmation pour les API <br />
-          — <br />
-          Présenter par Groupe F
-        </h1>
+      <div class="img-section">
+        <img src="images/question.jpg" alt="stratégie" />
       </div>
       <div class="footer">Groupe F</div>
-    </div> 
+    </div>
+    <!-- FIN SLIDES 2 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 3 -->
+    <div class="container tree">
+      <div class="text-section tree">
+        <h1>
+          Principes fondamentaux et <br />
+          architecture des API
+        </h1>
+        <ol>
+          <li>Demande et Réponse</li>
+          <li>Points de terminaison (Endpoints)</li>
+          <li>Documentation</li>
+        </ol>
+        <div class="comment">
+          <p>
+            1- Demande et Réponse: Un client envoie une requête à l'API, qui
+            traite la demande et renvoie une réponse contenant les données
+            requises.
+          </p>
+          <p>
+            2 - Points de terminaison (Endpoints) : Chaque API est composée de
+            points d'accès spécifiques qui définissent les opérations et les
+            données accessibles.
+          </p>
+          <p>
+            3 - Une documentation complète est essentielle pour comprendre
+            comment utiliser une API et les données qu'elle fournit.
+          </p>
+        </div>
+      </div>
+      <div class="img-section">
+        <img src="images/api-img.avif" alt="illustrations api" />
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 3 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 4 -->
+    <div class="container four">
+      <div class="img-section">
+        <img src="images/strategie.jpg" alt="stratégie" />
+      </div>
+      <div class="text-section four">
+        <div class="items">
+          <div class="box">
+            <h2>REST</h2>
+            <p>REST est le type d'API le plus répandu.</p>
+          </div>
+          <div class="box">
+            <h2>SOAP</h2>
+            <p>SOAP utilise un langage XML pour la communication.</p>
+          </div>
+          <div class="box box3">
+            <h2>GraphQL</h2>
+            <p>GraphQL est un langage de requête.</p>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            1 - REST : REST (Representational State Transfer) est le type d'API
+            le plus répandu. Il utilise des méthodes HTTP standard comme GET,
+            POST, PUT, DELETE
+          </p>
+          <p>
+            2 - SOAP : (Simple Object Access Protocol) utilise un langage XML
+            pour la communication et est plus complexe que REST.
+          </p>
+          <p>
+            3 - GraphQL : GraphQL est un langage de requête qui permet de
+            demander des données précises et d'éviter les requêtes multiples.
+          </p>
+        </div>
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 4 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 5 -->
+    <div class="container five">
+      <div class="img-section">
+        <img src="images/protocole.jpg" alt="protocole" />
+      </div>
+      <div class="text-section five">
+        <h1>Protocoles et méthodes de communication</h1>
+        <div class="proto">
+          <p>HTTP</p>
+          <p>HTTPS</p>
+          <p>JSON</p>
+          <p>XML</p>
+        </div>
+        <div class="comment">
+          <p>
+            1 - HTTPS (Hypertext Transfer Protocol Secure) est une version
+            sécurisée de HTTP qui utilise le cryptage pour protéger les données.
+          </p>
+          <p>
+            2 - HTTP (Hypertext Transfer Protocol) est le protocole standard
+            pour la communication web. Il est largement utilisé pour les API.
+          </p>
+          <p>
+            3 - JSON (JavaScript Object Notation) est un format de données léger
+            et lisible par l'homme, souvent utilisé pour les API REST.
+          </p>
+          <p>
+            4 - XML (Extensible Markup Language) est un format de données plus
+            complexe que JSON, souvent utilisé pour les API SOAP.
+          </p>
+        </div>
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 5 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 6 -->
+    <div class="container tree">
+      <div class="text-section tree">
+        <h1>
+          Stratégies d'intégration et <br />
+          d'utilisation des API
+        </h1>
+        <ol>
+          <li>
+            <strong> Identifier les besoins </strong> <br />
+            <span
+              >Comprendre les besoins et les défis que l'API peut résoudre.
+            </span>
+          </li>
+          <li>
+            <strong> Choisir les API adéquates </strong> <br />
+            <span
+              >Évaluer les différentes options d'API et choisir celles qui
+              correspondent aux besoins spécifiques.
+            </span>
+          </li>
+          <li>
+            <strong>Intégrer l'API</strong> <br />
+            <span
+              >Développer du code pour connecter l'API à votre application ou
+              service.
+            </span>
+          </li>
+          <li>
+            <strong>Documenter et maintenir </strong> <br />
+            <span
+              >Maintenir une documentation complète de l'intégration et gérer
+              les mises à jour de l'API.
+            </span>
+          </li>
+        </ol>
+      </div>
+      <div class="img-section">
+        <img src="images/strategie.jpg" alt="strategie" />
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 6 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 7 -->
+    <div class="container seven">
+      <div class="img-section">
+        <img src="images/strategie.jpg" alt="strategie" />
+      </div>
+      <div class="text-section tree">
+        <h1>
+          Défis et bonnes pratiques <br />
+          de sécurité
+        </h1>
+        <ol>
+          <li>
+            <strong> Authentification et autorisation </strong> <br />
+            <br />
+            <span
+              >Vérifier l'identité des utilisateurs et limiter l'accès aux
+              ressources sensibles.
+            </span>
+          </li>
+          <li>
+            <strong> Chiffrement des données </strong> <br />
+            <br />
+            <span
+              >Protéger les données sensibles pendant le transit et au repos.
+            </span>
+          </li>
+          <li>
+            <strong>Gestion des erreurs </strong> <br />
+            <br />
+            <span
+              >Gérer les erreurs et les exceptions de manière sécurisée et
+              informative.
+            </span>
+          </li>
+        </ol>
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 7 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- DEBUT SLIDES 7 -->
+    <div class="container tree">
+      <div class="text-section tree">
+        <h1>
+          Outils et technologies de veille <br />
+          technologique
+        </h1>
+        <ol>
+          <li><strong> Plateformes d'API </strong> <br /></li>
+          <li><strong> Blogs et publications </strong> <br /></li>
+          <li><strong>Événements et conférences </strong> <br /></li>
+        </ol>
+        <div class="comment">
+          <p>
+            1 - Plateformes d'API : Des plateformes comme RapidAPI ou Postman
+            offrent un accès à des milliers d'API et des outils de test.
+          </p>
+          <p>
+            2 - Blogs et publications :Des blogs et des sites web spécialisés
+            publient des articles et des tutoriels sur les dernières tendances
+            des API.
+          </p>
+          <p>
+            3 - Événements et conférences:Des conférences et des événements
+            offrent des opportunités d'apprentissage et de réseautage avec des
+            experts en API.
+          </p>
+        </div>
+      </div>
+      <div class="img-section">
+        <img src="images/outil-tech.jpg" alt="Outils et tech" />
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 7 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- FIN SLIDES 9 -->
+    <div class="container nine">
+      <div class="text-section tree">
+        <h1>Perspectives d'avenir et tendances émergentes des API</h1>
+        <div class="comment">
+          <p>
+            1 - API sans serveur (Serverless APIs) : Hébergement et gestion des
+            API sans infrastructure physique.
+          </p>
+          <p>
+            2 - API basées sur l'IA : Intégration d'intelligence artificielle
+            dans les API pour améliorer les performances et la personnalisation.
+          </p>
+          <p>
+            3 - API de l'Internet des objets (IoT) :Connecter les appareils
+            physiques au monde numérique via les API.
+          </p>
+        </div>
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 9 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- FIN SLIDES 10 -->
+    <div class="container tree">
+      <div class="text-section tree ten">
+        <h1>Conclusion</h1>
+        <p class="conclusion_texte">
+          Les API sont devenues des composants essentiels du développement
+          logiciel moderne. Elles offrent une connectivité accrue, une
+          flexibilité accrue et de nouvelles possibilités pour innover. En
+          comprenant les bases des API et en suivant les meilleures pratiques,
+          vous pouvez libérer le potentiel de ces technologies pour créer des
+          solutions innovantes et puissantes.
+        </p>
+        <div class="comment">
+          <p>
+            <strong>Conclusion :</strong> Les API sont devenues des composants
+            essentiels du développement logiciel moderne. Elles offrent une
+            connectivité accrue, une flexibilité accrue et de nouvelles
+            possibilités pour innover. En comprenant les bases des API et en
+            suivant les meilleures pratiques, vous pouvez libérer le potentiel
+            de ces technologies pour créer des solutions innovantes et
+            puissantes.
+          </p>
+        </div>
+      </div>
+      <div class="img-section">
+        <img src="images/conclusion.jpg" alt="conclusion" />
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 10 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- FIN SLIDES 11 -->
+    <div class="container tree">
+      <div class="text-section tree ten">
+        <h1 class="thanks">Merci !</h1>
+        <p class="conclusion_texte">
+          Les API sont devenues des composants essentiels du développement
+          logiciel moderne. Elles offrent une connectivité accrue, une
+          flexibilité accrue et de nouvelles possibilités pour innover. En
+          comprenant les bases des API et en suivant les meilleures pratiques,
+          vous pouvez libérer le potentiel de ces technologies pour créer des
+          solutions innovantes et puissantes.
+        </p>
+        <div class="comment">
+          <p>
+            <strong>Conclusion :</strong> Les API sont devenues des composants
+            essentiels du développement logiciel moderne. Elles offrent une
+            connectivité accrue, une flexibilité accrue et de nouvelles
+            possibilités pour innover. En comprenant les bases des API et en
+            suivant les meilleures pratiques, vous pouvez libérer le potentiel
+            de ces technologies pour créer des solutions innovantes et
+            puissantes.
+          </p>
+        </div>
+      </div>
+      <div class="img-section">
+        <img src="images/thanks.jpg" alt="remerciement" />
+      </div>
+      <div class="footer">Groupe F</div>
+    </div>
+    <!-- FIN SLIDES 11 -->
+    <!-- ============================================ -->
   </body>
 </html>

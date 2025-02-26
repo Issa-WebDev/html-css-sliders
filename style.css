@@ -4,38 +4,40 @@
   box-sizing: border-box;
 }
 body {
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   gap: 100px;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 100px 20px;
   background-color: white;
 }
+
+/* ================================================ */
+/*  (debut) LES STYLES EN COMMUN POUR TOUTES LES SLIDES */
 .container {
   position: relative;
-  background-color: white;
-  width: 60%;
+  background-color: #e7e6e6;
+  width: 70%;
   display: grid;
-  grid-template-columns: 40% 1fr;
-  height: 65vh;
+  min-height: 65vh;
   overflow: hidden;
-}
-.img-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img-section img {
-  width: 100%;
-  height: auto;
+  border: 6px solid gray;
 }
 .text-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   background-color: #e7e6e6;
+}
+.comment {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  margin-left: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
 }
 .footer {
   position: absolute;
@@ -43,3 +45,192 @@ body {
   bottom: 10px;
   font-weight: bold;
 }
+/* (fin) LES STYLES EN COMMUN POUR TOUTES LES SLIDES */
+/* ================================================ */
+
+/* ================================================ */
+/* DEBUT STYLE CSS POUR TOUTES IMAGES SUR LE SITE */
+.img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-section img {
+  width: 100%;
+  height: 100%;
+}
+/* FIN STYLE CSS POUR TOUTES IMAGES SUR LE SITE */
+/* ================================================ */
+
+/* ================================================ */
+/* DEBUT SLIDES 1 */
+.container.one {
+  grid-template-columns: 40% 1fr;
+}
+.text-section.one {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/* FIN SLIDES 1 */
+/* ================================================ */
+
+/* ================================================ */
+/* DEBUT SLIDES 2 */
+.container.two {
+  grid-template-columns: 1fr 40%;
+}
+.text-section.two {
+  flex-direction: column;
+  padding: 40px 0 0 40px;
+}
+.text-section.two h1,
+.text-section.two h3 {
+  padding-bottom: 40px;
+}
+.text-section.two h4 {
+  margin-bottom: 10px;
+}
+.text-section.two ul {
+  list-style-type: square;
+  max-width: 300px;
+}
+.text-section.two ul li {
+  padding-bottom: 40px;
+}
+/* FIN SLIDES 2 */
+/* ================================================ */
+
+/* ================================================ */
+/* DEBUT SLIDE 3 */
+.container.tree {
+  grid-template-columns: 1fr 40%;
+}
+.text-section.tree {
+  flex-direction: column;
+  padding: 40px 0 0 40px;
+}
+.text-section.tree h1 {
+  padding-bottom: 40px;
+}
+.text-section.tree ol li {
+  padding-bottom: 40px;
+}
+.container.tree .footer {
+  color: white;
+}
+/* FIN SLIDES 3 */
+/* ================================================ */
+
+/* ================================================ */
+/* DEBUT SLIDE 4 */
+.container.four {
+  grid-template-columns: 40% 1fr;
+}
+.text-section.four {
+  flex-direction: column;
+  padding: 40px 0 0 40px;
+}
+.text-section.four .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 60px;
+}
+.text-section.four .box {
+  background-color: #cceeff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.text-section.four .box h2 {
+  padding-bottom: 20px;
+}
+.text-section.four .box.box3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  max-height: 120px;
+}
+/* FIN SLIDES 4 */
+/* ================================================ */
+
+/* ================================================ */
+/* DEBUT SLIDE 5 */
+.container.five {
+  height: 82vh;
+  grid-template-rows: 40% 1fr;
+}
+.text-section.five {
+  flex-direction: column;
+  padding: 40px 0 0 40px;
+}
+.text-section.five h1 {
+  text-align: center;
+}
+.text-section.five .proto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+/* FIN SLIDES 5 */
+/* ================================================ */
+
+
+/* ================================================ */
+/* DEBUT SLIDES 6 */
+/* les mêmes styles que la slides 3 donc nous avons appliquer les mêmes classes pour éviter la rédondanace */
+/* FIN SLIDES 6 */
+/* ================================================ */
+
+
+
+/* ============================================  */
+/* DEBUT SLIDES 7  */
+.container.seven {
+  grid-template-columns: 40% 1fr;
+}
+.container.seven .footer {
+  color: black;
+}
+/* FIN SLIDES 7  */
+/* ============================================  */
+
+
+
+/* ================================================ */
+/* DEBUT SLIDES 8 */
+/* les mêmes styles que la slides 3 donc nous avons appliquer les mêmes classes pour éviter la rédondanace */
+/* FIN SLIDES 8 */
+/* ================================================ */
+
+
+/* ================================================ */
+/* DEBUT SLIDES 9 */
+.container.nine h1 {
+  text-align: center;
+}
+/* FIN SLIDES 9 */
+/* ================================================ */
+
+
+/* ================================================ */
+/* DEBUT SLIDES 10 */
+.text-section.tree.ten {
+  padding-top: 100px;
+}
+.conclusion_texte {
+  padding: 0 40px 40px 0;
+}
+/* FIN SLIDES 10 */
+/* ================================================ */
+
+
+/* ================================================ */
+/* DEBUT SLIDES 11 */
+.thanks {
+  color: #231971;
+}
+/* FIN SLIDES 10 */
+/* ================================================ */
