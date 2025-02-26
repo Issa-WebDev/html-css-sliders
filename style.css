@@ -171,7 +171,6 @@ header {
 /* ================================================ */
 /* DEBUT SLIDE 5 */
 .container.five {
-  height: 90vh;
   grid-template-rows: 40% 1fr;
 }
 .text-section.five {
