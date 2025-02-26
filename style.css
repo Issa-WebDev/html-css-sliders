@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -12,6 +12,20 @@ body {
   justify-content: center;
   padding: 100px 20px;
   background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #231971;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 10;
+  font-weight: bold;
+  padding: 10px 0;
 }
 
 /* ================================================ */
@@ -157,7 +171,7 @@ body {
 /* ================================================ */
 /* DEBUT SLIDE 5 */
 .container.five {
-  height: 82vh;
+  height: 90vh;
   grid-template-rows: 40% 1fr;
 }
 .text-section.five {
